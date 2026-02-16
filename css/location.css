@@ -1,0 +1,210 @@
+/* ==============================================
+   LOCATION.CSS - Khusus halaman Lokasi Winz Barbershop
+   ============================================== */
+
+:root {
+  --gold: #c6a75e;
+  --dark: #1a1a1a;
+  --white: #ffffff;
+}
+
+#location-header {
+  background: linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.85)),
+              url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80') center/cover no-repeat;
+  min-height: 45vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#location-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+
+#location-header .container {
+  position: relative;
+  z-index: 2;
+}
+
+.urban-title {
+  text-shadow: 0 8px 30px rgba(0,0,0,0.7);
+  letter-spacing: 2px;
+}
+
+/* Info Box */
+.location-info {
+  border-left: 6px solid var(--gold);
+  transition: all 0.3s ease;
+  background: rgba(30,30,30,0.9);
+  backdrop-filter: blur(6px);
+}
+
+.location-info:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(198,167,94,0.25);
+}
+
+.location-info i {
+  transition: transform 0.3s;
+}
+
+.location-info:hover i {
+  transform: scale(1.2);
+}
+
+/* Map Container */
+.map-container {
+  position: relative;
+  border: 3px solid rgba(198,167,94,0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  transition: all 0.4s ease;
+}
+
+.map-container:hover {
+  border-color: var(--gold);
+  box-shadow: 0 20px 50px rgba(198,167,94,0.3);
+  transform: translateY(-5px);
+}
+
+.map-container iframe {
+  display: block;
+}
+
+/* Button Gold Outline */
+.btn-outline-gold {
+  color: var(--gold);
+  border-color: var(--gold);
+  transition: all 0.3s;
+}
+
+.btn-outline-gold:hover {
+  background: var(--gold);
+  color: var(--dark);
+}
+
+/* Memastikan teks di dalam kotak alamat berwarna putih */
+.location-info {
+  color: #ffffff !important; /* putih murni untuk semua teks */
+}
+
+.location-info p,
+.location-info h3,
+.location-info div {
+  color: #ffffff !important;
+}
+
+/* Icon tetap gold, tapi teks di sampingnya putih */
+.location-info i {
+  color: var(--gold) !important;
+}
+
+/* Override kalau ada teks kecil atau link */
+.location-info small,
+.location-info a:not(.btn) {
+  color: #e0e0e0 !important; /* putih agak abu supaya kontras */
+}
+
+/* Background khusus untuk bagian isi (content utama) */
+.location-bg {
+  background: linear-gradient(
+    135deg,
+    rgba(26, 26, 26, 0.92) 0%,
+    rgba(30, 30, 30, 0.88) 50%,
+    rgba(26, 26, 26, 0.92) 100%
+  ),
+  url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&auto=format&fit=crop&q=80') center/cover no-repeat;
+  
+  /* Alternatif kalau mau pakai gambar lokal */
+  /* background: linear-gradient(rgba(26,26,26,0.9), rgba(26,26,26,0.85)), url('../img/location-bg.jpg') center/cover; */
+  
+  background-attachment: fixed; /* efek parallax ringan */
+  position: relative;
+}
+
+/* Optional: overlay tipis supaya teks lebih mudah dibaca */
+.location-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25); /* gelap tambahan kalau gambar terlalu terang */
+  z-index: 0;
+}
+
+/* Pastikan konten di atas overlay */
+.location-bg .container,
+.location-bg .row {
+  position: relative;
+  z-index: 1;
+}
+
+/* Kotak alamat dan map tetap semi-transparan */
+.location-info,
+.map-container {
+  background: rgba(30, 30, 30, 0.92) !important;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(198, 167, 94, 0.25);
+}
+/* Perbaikan tombol di location.html agar kontras tinggi di dark bg */
+.location-info .btn-book {
+  background-color: var(--gold) !important;
+  color: var(--dark) !important;
+  font-weight: 700 !important;
+  border: 3px solid var(--gold) !important; /* border lebih tebal */
+  border-radius: 50px !important;
+  padding: 14px 30px !important;
+  transition: all 0.3s ease;
+}
+
+.location-info .btn-book:hover {
+  background-color: #b8953f !important; /* gold lebih gelap saat hover */
+  color: white !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(198, 167, 94, 0.4);
+}
+
+.location-info .btn-outline-gold {
+  background: transparent !important;
+  color: var(--gold) !important;
+  border: 3px solid var(--gold) !important; /* border tebal gold */
+  border-radius: 50px !important;
+  padding: 14px 30px !important;
+  font-weight: 700 !important;
+  transition: all 0.3s ease;
+}
+
+.location-info .btn-outline-gold:hover {
+  background-color: var(--gold) !important;
+  color: var(--dark) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(198, 167, 94, 0.4);
+}
+
+/* Pastikan ikon di tombol juga kontras */
+.location-info .btn i {
+  color: inherit !important;
+}
+
+
+/* Responsive */
+@media (max-width: 992px) {
+  #location-header {
+    min-height: 40vh;
+  }
+  .location-info {
+    margin-bottom: 2.5rem;
+  }
+  .map-container iframe {
+    height: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  #location-header h1 {
+    font-size: 2.8rem !important;
+  }
+}

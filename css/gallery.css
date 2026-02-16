@@ -1,0 +1,121 @@
+/* ==============================================
+   GALLERY.CSS – Versi yang lebih rapat & clean
+   ============================================== */
+
+:root {
+  --gold: #c6a75e;
+  --dark: #1a1a1a;
+  --white: #ffffff;
+  --gray: #f5f5f5;
+  --bg-dark: rgba(26, 26, 26, 0.85);
+  --card-bg: rgba(30, 30, 30, 0.88);
+}
+
+body {
+  background: var(--bg-dark) url('../img/gunting.jpg') center/cover no-repeat fixed !important;
+  background-attachment: fixed;
+  color: var(--white);
+}
+
+/* Header lebih ramping */
+
+
+#gallery-header .container {
+  padding: 4rem 1rem 3rem;
+}
+
+.urban-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  letter-spacing: -1px;
+  text-shadow: 0 6px 20px rgba(0,0,0,0.8);
+}
+
+#gallery-header .urban-title {
+  font-size: clamp(3.5rem, 10vw, 6.5rem);
+}
+
+#gallery-header .lead {
+  font-size: 1.4rem;
+  max-width: 700px;
+  margin: 0 auto 1.25rem;
+}
+
+.divider-gold {
+  background: var(--gold);
+  height: 5px;
+  width: 140px;
+  margin: 0.75rem auto;
+}
+
+/* Gallery Section – jarak atas dikurangi */
+#gallery {
+  padding-top: 2.5rem;     /* ← ini kunci utama agar tidak terlalu jauh */
+  padding-bottom: 5rem;
+}
+
+#gallery h2.urban-title {
+  font-size: 2.8rem;
+  margin-bottom: 0.75rem;
+}
+
+#gallery .text-muted {
+  margin-bottom: 2.5rem;
+}
+
+/* Grid gambar tetap square & elegan */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.45);
+  transition: all 0.4s ease;
+  background: var(--card-bg);
+  border: 1px solid rgba(198,167,94,0.12);
+  aspect-ratio: 1 / 1;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.55s ease;
+}
+
+.gallery-item:hover .gallery-img {
+  transform: scale(1.15);
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.95), transparent);
+  color: var(--gold);
+  padding: 1.1rem 0.9rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.05rem;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+  opacity: 1;
+}
+
+/* Lightbox tweak */
+.lb-outerContainer { border-radius: 12px; }
+.lb-data .lb-caption { color: var(--gold) !important; font-weight: 600; }
+
+/* Responsive */
+@media (max-width: 992px) {
+  #gallery-header .container { padding: 5rem 1rem 3.5rem; }
+  #gallery { padding-top: 2rem; }
+}
+
+@media (max-width: 576px) {
+  #gallery-header .urban-title { font-size: 3.2rem; }
+  #gallery h2.urban-title { font-size: 2.2rem; }
+}
