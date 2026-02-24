@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINZ BARBERSHOP | Street & Elegance</title>
+    
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-light fixed-top" id="main-navbar">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="img/logo.jpg" class="logo-fixed rounded-circle me-2" alt="Logo">
+            <span class="brand-text">WINZ <span class="text-gold">BARBERSHOP</span></span>
+        </a>
+        <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="price.html">Price List</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="lokasi.html">Location</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero-section">
+    <div class="overlay-gradient"></div>
+    <div class="container hero-content text-center" data-aos="zoom-in">
+        <h1 class="hero-title text-white">WINZ <span class="text-gold">BARBERSHOP</span></h1>
+        <p class="tagline text-white">More Than a Cut — It’s Identity.</p>
+        <a href="price.html" class="btn-street">BOOK NOW</a>
+    </div>
+</header>
+
+<section class="section-about text-center" data-aos="fade-up">
+    <div class="container">
+        <h6 class="text-gold tracking-widest fw-bold mb-3">WHO WE ARE</h6>
+        <h2 class="display-4 fw-black text-dark mb-4">EST. <span class="text-outline">2024</span></h2>
+        <div class="divider-gold mx-auto mb-4"></div>
+        <p class="about-text mx-auto">
+            WINZ Barbershop adalah ruang di mana elegansi bertemu dengan energi street yang autentik. Mengusung konsep modern dan premium, kami menghadirkan pengalaman potong rambut yang lebih dari sekadar grooming.
+        </p>
+        <p>
+            Di WINZ Barbershop, kreativitas dan kebebasan adalah inti dari setiap karya. Kami percaya bahwa gaya adalah bentuk ekspresi diri, bukan sekadar tren. Setiap potongan rambut dikerjakan dengan presisi, passion, dan sentuhan artistik, sehingga setiap pelanggan bisa tampil sesuai identitasnya sendiri — bold, classy, atau street. Karena di WINZ, style bukan batasan, melainkan kebebasan.
+        </p>
+    </div>
+</section>
+
+<section class="section-team">
+    <div class="container text-center">
+        <h1 class="section-title text-dark" data-aos="fade-up">Our Team</h1>
+        <div class="title-underline" data-aos="fade-up"></div>
+        <p class="team-subtitle text-muted" data-aos="fade-up">Capster berbakat di balik gaya autentik Anda.</p>
+
+        <div class="team-grid mt-5">
+            <div class="team-row">
+                <div class="member-circle" data-aos="fade-up" data-aos-delay="100"><img src="img/barber1.jpg" alt=""></div>
+                <div class="member-circle" data-aos="fade-up" data-aos-delay="200"><img src="img/barber2.jpg" alt=""></div>
+                <div class="member-circle" data-aos="fade-up" data-aos-delay="300"><img src="img/barber3.jpg" alt=""></div>
+                <div class="member-circle" data-aos="fade-up" data-aos-delay="400"><img src="img/barber4.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-services">
+    <div class="container">
+        <div class="service-card-image shadow-lg" data-aos="fade-up">
+            <div class="overlay-card"></div>
+            <div class="row g-0 align-items-center position-relative">
+                <div class="col-lg-4 p-5">
+                    <h2 class="h3 fw-bold text-white mb-4">LAYANAN <br> PREMIUM</h2>
+                    <p class="text-light small mb-4">Nikmati pengalaman perawatan terbaik untuk kepercayaan diri Anda.</p>
+                    <a href="#" class="btn-explore">SELENGKAPNYA <i class="bi bi-arrow-right ms-2"></i></a>
+                </div>
+                
+                <div class="col-lg-8 p-4">
+                    <div id="serviceCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            
+                            <div class="carousel-item active">
+                                <div class="row g-3 justify-content-center">
+                                    <div class="col-5">
+                                        <div class="service-box-small" data-bs-toggle="modal" data-bs-target="#modalHaircolor">
+                                            <img src="img/haircolor.png" alt="Hair Color">
+                                            <div class="box-label-small">Hair Coloring</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="service-box-small" data-bs-toggle="modal" data-bs-target="#modalFade">
+                                            <img src="img/fade.png" alt="Fade">
+                                            <div class="box-label-small">Fade</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row g-3 justify-content-center">
+                                    <div class="col-5">
+                                        <div class="service-box-small" data-bs-toggle="modal" data-bs-target="#modalMullet">
+                                            <img src="img/mullet.png" alt="Mullet">
+                                            <div class="box-label-small">Mullet</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="service-box-small" data-bs-toggle="modal" data-bs-target="#modalTapper">
+                                            <img src="img/tapper.png" alt="Tapper">
+                                            <div class="box-label-small">Tapper</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row g-3 justify-content-center">
+                                    <div class="col-5">
+                                        <div class="service-box-small" data-bs-toggle="modal" data-bs-target="#modalBlowout">
+                                            <img src="img/blowout.png" alt="Blowout">
+                                            <div class="box-label-small">Blowout</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="service-box-small" data-bs-toggle="modal" data-bs-target="#modalFringe">
+                                            <img src="img/fringe.png" alt="Fringe">
+                                            <div class="box-label-small">Fringe</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="modal fade" id="modalHaircolor" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white" style="border: 2px solid #c6a75e;">
+            <div class="modal-header border-0"><h5 class="text-gold">HAIR COLORING</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+            <div class="modal-body text-center"><img src="img/haircolor.png" class="img-fluid rounded mb-3"><p>Teknik pewarnaan premium untuk karakter gaya yang lebih kuat.</p></div>
+        </div>
+    </div>
+</div>
+<!-- MODAL FADE -->
+<div class="modal fade" id="modalFade" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white" style="border:2px solid #c6a75e;">
+      <div class="modal-header border-0">
+        <h5 class="text-gold">FADE</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="img/fade.png" class="img-fluid rounded mb-3">
+        <p>Potongan dengan gradasi halus dari tipis ke tebal, memberikan tampilan clean, modern, dan maskulin.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL MULLET -->
+<div class="modal fade" id="modalMullet" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white" style="border:2px solid #c6a75e;">
+      <div class="modal-header border-0">
+        <h5 class="text-gold">MULLET</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="img/mullet.png" class="img-fluid rounded mb-3">
+        <p>Gaya edgy dengan bagian belakang lebih panjang, berani dan penuh karakter.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL TAPPER -->
+<div class="modal fade" id="modalTapper" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white" style="border:2px solid #c6a75e;">
+      <div class="modal-header border-0">
+        <h5 class="text-gold">TAPPER</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="img/tapper.png" class="img-fluid rounded mb-3">
+        <p>Transisi lembut di samping dan belakang, cocok untuk tampilan formal maupun santai.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL BLOWOUT -->
+<div class="modal fade" id="modalBlowout" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white" style="border:2px solid #c6a75e;">
+      <div class="modal-header border-0">
+        <h5 class="text-gold">BLOWOUT</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="img/blowout.png" class="img-fluid rounded mb-3">
+        <p>Volume natural dengan tampilan flowy yang stylish dan effortless cool.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL FRINGE -->
+<div class="modal fade" id="modalFringe" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white" style="border:2px solid #c6a75e;">
+      <div class="modal-header border-0">
+        <h5 class="text-gold">FRINGE</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="img/fringe.png" class="img-fluid rounded mb-3">
+        <p>Poni depan yang memberikan kesan youthful, fresh, dan trendy.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer id="main-footer" class="text-white text-center bg-dark py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 text-md-start mb-4">
+  <h4 class="brand-text mb-3">
+    <span class="text-white">WINZ</span> 
+    <span class="text-gold">BARBERSHOP</span>
+  </h4>
+  <p>Tempat terbaik untuk potong rambut, treatment, dan tampil maksimal di Medan.</p>
+  <small>© 2026 Winz Barbershop. All Rights Reserved.</small>
+</div>
+
+      <div class="col-md-4 text-md-center mb-4">
+        <h5>Layanan Kami</h5>
+        <div>Hair Cut & Styling</div>
+        <div>Beard & Shaving</div>
+        <div>Coloring & Treatment</div>
+        <div>Paket Special</div>
+      </div>
+
+      <div class="col-md-4 text-md-start">
+        <h5>Hubungi Kami</h5>
+        <div><i class="bi bi-whatsapp me-2"></i> 0812-3456-7890</div>
+        <div><i class="bi bi-geo-alt me-2"></i> Medan, Sumatera Utara</div>
+        
+        <div class="pt-4 social-icons">
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/winz.barbershop?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-gold me-4" title="Instagram Winz Barbershop">
+            <i class="bi bi-instagram fs-4"></i>
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/6285374450261?text=Halo%20Winz%20Barbershop,%20saya%20ingin%20booking%20atau%20tanya-tanya" target="_blank" class="text-gold me-4" title="Chat via WhatsApp">
+            <i class="bi bi-whatsapp fs-4"></i>
+          </a>
+
+          <!-- TikTok (ganti Facebook) -->
+          <a href="https://www.tiktok.com/@winzbarbershop" target="_blank" class="text-gold" title="TikTok">
+              <i class="bi bi-tiktok fs-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/bootstrap.bundle.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+
+</body>
+</html>

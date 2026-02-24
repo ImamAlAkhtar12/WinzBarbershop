@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winz Barbershop - Gallery</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+ <nav class="navbar navbar-expand-md navbar-light fixed-top" id="main-navbar">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="img/logo.jpg" class="logo-fixed rounded-circle me-2" alt="Logo">
+            <span class="brand-text">WINZ <span class="text-gold">BARBERSHOP</span></span>
+        </a>
+        <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="price.html">Price List</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="lokasi.html">Location</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- Spacer navbar – dikurangi sedikit agar tidak terlalu tinggi -->
+  <div style="padding-top: 90px;"></div>
+
+  <!-- Header Hero – lebih ramping -->
+  <header id="gallery-header" class="text-white">
+    <div class="container text-center py-5 py-md-5">
+      <h1 class="urban-title display-3 fw-bold text-gold mb-2">GALLERY</h1>
+      <p class="lead mb-3">OUR GALLERY</p>
+      <div class="divider-gold mx-auto" style="width: 120px; height: 4px;"></div>
+    </div>
+  </header>
+
+  <!-- Gallery Section – padding atas dikurangi drastis -->
+  <section id="gallery" class="pt-4 pb-5">
+    <div class="container">
+      <h2 class="text-center urban-title text-gold mb-3">Photo Gallery</h2>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="gallery-item">
+            <a href="img/lokasi.jpg" data-lightbox="winz-gallery" data-title="Lokasi Winz Barbershop">
+              <img src="img/lokasi.jpg" class="gallery-img" alt="Lokasi Winz Barbershop">
+            </a>
+            <div class="gallery-caption">Lokasi Winz Barbershop</div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="gallery-item">
+            <a href="img/barber.png" data-lightbox="winz-gallery" data-title="WInz Barbershop">
+              <img src="img/barber.png" class="gallery-img" alt="Winz Barbershop">
+            </a>
+            <div class="gallery-caption">Winz Barbershop</div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="gallery-item">
+            <a href="img/academy.png" data-lightbox="winz-gallery" data-title="Academy Winz Barbershop">
+              <img src="img/academy.png" class="gallery-img" alt="Academy Winz">
+            </a>
+            <div class="gallery-caption">Academy Winz Barbershop</div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="gallery-item">
+            <a href="img/kompetisi.jpg" data-lightbox="winz-gallery" data-title="2nd Winner Tag Team Barber Battle Bali Barber Expo 2025">
+              <img src="img/kompetisi.jpg" class="gallery-img" alt="Kompetisi 2025">
+            </a>
+            <div class="gallery-caption">2nd Winner Tag Team Barber Battle Bali Barber Expo 2025</div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="gallery-item">
+            <a href="img/kompetisi3.png" data-lightbox="winz-gallery" data-title="3rd Winner WAHL Barber Social Club Medan">
+              <img src="img/kompetisi3.png" class="gallery-img" alt="WAHL Barber Social Club">
+            </a>
+            <div class="gallery-caption">3rd Winner WAHL Barber Social Club Medan</div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="gallery-item">
+            <a href="img/guest.png" data-lightbox="winz-gallery" data-title="Guest Star Barber Party VOL II">
+              <img src="img/guest.png" class="gallery-img" alt="Guest Star">
+            </a>
+            <div class="gallery-caption">Guest Star Barber Party VOL II</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (sama seperti sebelumnya) -->
+  <footer id="main-footer" class="text-white text-center bg-dark py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-md-start mb-4">
+          <h4 class="brand-text mb-3">
+            <span class="text-white">WINZ</span> 
+            <span class="text-gold">BARBERSHOP</span>
+          </h4>
+          <p>Tempat terbaik untuk potong rambut, treatment, dan tampil maksimal di Medan.</p>
+          <small>© 2026 Winz Barbershop. All Rights Reserved.</small>
+        </div>
+
+        <div class="col-md-4 text-md-center mb-4">
+          <h5>Layanan Kami</h5>
+          <div>Hair Cut & Styling</div>
+          <div>Beard & Shaving</div>
+          <div>Coloring & Treatment</div>
+          <div>Paket Special</div>
+        </div>
+
+        <div class="col-md-4 text-md-start">
+          <h5>Hubungi Kami</h5>
+          <div><i class="bi bi-whatsapp me-2"></i> 0812-3456-7890</div>
+          <div><i class="bi bi-geo-alt me-2"></i> Medan, Sumatera Utara</div>
+          <div class="pt-4 social-icons">
+            <a href="https://www.instagram.com/winzbarbershop/" target="_blank" class="text-gold me-4" title="Instagram">
+              <i class="bi bi-instagram fs-4"></i>
+            </a>
+            <a href="https://wa.me/6285374450261?text=Halo%20Winz%20Barbershop" target="_blank" class="text-gold me-4" title="WhatsApp">
+              <i class="bi bi-whatsapp fs-4"></i>
+            </a>
+            <a href="https://www.tiktok.com/@winzbarbershop" target="_blank" class="text-gold" title="TikTok">
+              <i class="bi bi-tiktok fs-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/lightbox-plus-jquery.js"></script>
+</body>
+</html>

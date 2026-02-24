@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winz Barbershop - Price List</title>
+
+  <!-- Bootstrap CSS lokal kamu -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS kamu -->
+  <link rel="stylesheet" href="css/price.css"> <!-- atau css/price.css -->
+  <link rel="stylesheet" href="css/style.css"> <!-- kalau ada style umum -->
+
+  <style>
+    body {
+      background: linear-gradient(rgba(26, 26, 26, 0.82), rgba(26, 26, 26, 0.92)),
+                  url('https://thumbs.dreamstime.com/b/luxurious-modern-barbershop-interior-stylish-design-black-gold-color-palette-light-plants-mirrors-trendy-barber-chairs-salon-385595635.jpg') center/cover no-repeat fixed;
+      background-attachment: fixed;
+      min-height: 100vh;
+      color: #fff; /* override kalau perlu */
+    }
+
+    /* Optional: buat card lebih kontras agar mudah dibaca di background */
+    .card {
+      background: rgba(30, 30, 30, 0.85) !important;
+      border: 1px solid rgba(198, 167, 94, 0.3) !important;
+      backdrop-filter: blur(4px);
+    }
+
+    .card-header {
+      background: rgba(26, 26, 26, 0.9) !important;
+    }
+
+    .price-big {
+      text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-light fixed-top" id="main-navbar">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="img/logo.jpg" class="logo-fixed rounded-circle me-2" alt="Logo">
+            <span class="brand-text">WINZ <span class="text-gold">BARBERSHOP</span></span>
+        </a>
+        <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="price.html">Price List</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="lokasi.html">Location</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+  <div style="padding-top: 120px;"></div>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h1 class="urban-title display-4 fw-bold text-gold">PRICE LIST</h1>
+        <div class="divider-gold mx-auto"></div>
+        <p class="lead text-muted">Harga terbaru & paket spesial Winz Barbershop</p>
+      </div>
+
+      <!-- Daftar Harga Individual -->
+      <div class="row g-4 justify-content-center mb-5">
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 text-center">
+            <div class="card-body py-4">
+              <h5 class="fw-bold">Men's Basic</h5>
+              <h3 class="price-big mt-3">70K</h3>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-4">
+              <a href="https://wa.me/6285374450261?text=Halo%20Winz%20Barbershop,%20saya%20mau%20booking%20Men's%20Basic%2070K%20nih!" 
+                 target="_blank" class="btn btn-book btn-lg w-75">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 text-center">
+            <div class="card-body py-4">
+              <h5 class="fw-bold">Kids Haircut( Age 1-12)</h5>
+              <h3 class="price-big mt-3">50K</h3>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-4">
+              <a href="https://wa.me/6285374450261?text=Halo%20Winz%20Barbershop,%20saya%20mau%20booking%20Kids%20Haircut%2050K!" 
+                 target="_blank" class="btn btn-book btn-lg w-75">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 text-center">
+            <div class="card-body py-4">
+              <h5 class="fw-bold">Facial</h5>
+              <h3 class="price-big mt-3">80K</h3>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-4">
+              <a href="https://wa.me/6285374450261?text=Halo%20Winz%20Barbershop,%20saya%20mau%20booking%20Facial%2080K!" 
+                 target="_blank" class="btn btn-book btn-lg w-75">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 text-center">
+            <div class="card-body py-4">
+              <h5 class="fw-bold">Creambath</h5>
+              <h3 class="price-big mt-3">70K</h3>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-4">
+              <a href="https://wa.me/6285374450261?text=Halo%20Winz%20Barbershop,%20saya%20mau%20booking%20Creambath%2070K!" 
+                 target="_blank" class="btn btn-book btn-lg w-75">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 text-center">
+            <div class="card-body py-4">
+              <h5 class="fw-bold">Shaving</h5>
+              <h3 class="price-big mt-3">30K</h3>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-4">
+              <a href="https://wa.me/6285374450261?text=Halo%20Winz%20Barbershop,%20saya%20mau%20booking%20Shaving%2030K!" 
+                 target="_blank" class="btn btn-book btn-lg w-75">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 text-center">
+            <div class="card-body py-4">
+              <h5 class="fw-bold">Styling Pomade</h5>
+              <h3 class="price-big mt-3">30K</h3>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-4">
+              <a href="https://wa.me/6285374450261?text=Halo%20Winz%20Barbershop,%20saya%20mau%20booking%20Styling%20Pomade%2030K!" 
+                 target="_blank" class="btn btn-book btn-lg w-75">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 text-center">
+            <div class="card-body py-4">
+              <h5 class="fw-bold">Hair Colour Black</h5>
+              <h3 class="price-big mt-3">120K</h3>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-4">
+              <a href="https://wa.me/6285374450261?text=Halo%20Winz%20Barbershop,%20saya%20mau%20booking%20Hair%20Colour%20Black%20120K!" 
+                 target="_blank" class="btn btn-book btn-lg w-75">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 text-center">
+            <div class="card-body py-4">
+              <h5 class="fw-bold">Hair Colour Rainbow</h5>
+              <h3 class="price-big mt-3">160K</h3>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-4">
+              <a href="https://wa.me/6285374450261?text=Halo%20Winz%20Barbershop,%20saya%20mau%20booking%20Hair%20Colour%20Rainbow%20160K!" 
+                 target="_blank" class="btn btn-book btn-lg w-75">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 text-center">
+            <div class="card-body py-4">
+              <h5 class="fw-bold">Hair Colour Highlight</h5>
+              <h3 class="price-big mt-3">250K</h3>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-4">
+              <a href="https://wa.me/6285374450261?text=Halo%20Winz%20Barbershop,%20saya%20mau%20booking%20Hair%20Colour%20Highlight%20250K!" 
+                 target="_blank" class="btn btn-book btn-lg w-75">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+          <div class="card h-100 text-center">
+            <div class="card-body py-4">
+              <h5 class="fw-bold">Bleaching</h5>
+              <h3 class="price-big mt-3">80K</h3>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-4">
+              <a href="https://wa.me/6285374450261?text=Halo%20Winz%20Barbershop,%20saya%20mau%20booking%20Bleaching%2080K!" 
+                 target="_blank" class="btn btn-book btn-lg w-75">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAKET SPECIAL -->
+      <div class="text-center mb-5">
+        <h2 class="urban-title display-5 fw-bold text-gold">PAKET SPECIAL</h2>
+        <div class="divider-gold mx-auto"></div>
+        <p class="lead text-muted">Pilih paket yang cocok buat lo!</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Strike -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center h-100">
+            <div class="card-header py-3">
+              <h4>STRIKE PACKET</h4>
+            </div>
+            <div class="card-body py-4">
+              <h3 class="price-big">85K</h3>
+              <hr class="w-50 mx-auto my-4 divider-gold">
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check-circle-fill me-2"></i>Hair Cut</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Face Scrub</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Hair Tonic Wash</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Shaving</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Style Pomade</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-4">
+              <a href="https://wa.me/6285374450261?text=Halo%20Winz%20Barbershop,%20saya%20mau%20booking%20STRIKE%20PACKET%2085K!" 
+                 target="_blank" class="btn btn-book btn-lg w-75">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Glory -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center h-100">
+            <div class="card-header py-3">
+              <h4>GLORY PACKET</h4>
+            </div>
+            <div class="card-body py-4">
+              <h3 class="price-big">120K</h3>
+              <hr class="w-50 mx-auto my-4 divider-gold">
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check-circle-fill me-2"></i>Hair Cut</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Creambath</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Vitamin Hair Wash</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Tonic</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Shaving</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Style Pomade</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-4">
+              <a href="https://wa.me/6285374450261?text=Halo%20Winz%20Barbershop,%20saya%20mau%20booking%20GLORY%20PACKET%20120K!" 
+                 target="_blank" class="btn btn-book btn-lg w-75">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Legendary -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center h-100">
+            <div class="card-header py-3">
+              <h4>LEGENDARY PACKET</h4>
+            </div>
+            <div class="card-body py-4">
+              <h3 class="price-big">140K</h3>
+              <hr class="w-50 mx-auto my-4 divider-gold">
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check-circle-fill me-2"></i>Hair Cut</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Face Scrub</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Facial</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Hair Wash</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Tonic</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Shaving</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Style Pomade</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-4">
+              <a href="https://wa.me/6285374450261?text=Halo%20Winz%20Barbershop,%20saya%20mau%20booking%20LEGENDARY%20PACKET%20140K!" 
+                 target="_blank" class="btn btn-book btn-lg w-75">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Victory -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center h-100">
+            <div class="card-header py-3">
+              <h4>VICTORY PACKET</h4>
+            </div>
+            <div class="card-body py-4">
+              <h3 class="price-big">185K</h3>
+              <hr class="w-50 mx-auto my-4 divider-gold">
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check-circle-fill me-2"></i>Hair Cut</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Face Scrub</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Facial</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Creambath</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Tonic Wash</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Shaving</li>
+                <li><i class="bi bi-check-circle-fill me-2"></i>Style Pomade</li>
+              </ul>
+            </div>
+            <div class="card-footer bg-transparent border-0 pb-4">
+              <a href="https://wa.me/6285374450261?text=Halo%20Winz%20Barbershop,%20saya%20mau%20booking%20VICTORY%20PACKET%20185K!" 
+                 target="_blank" class="btn btn-book btn-lg w-75">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="main-footer" class="text-white text-center bg-dark py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 text-md-start mb-4">
+  <h4 class="brand-text mb-3">
+    <span class="text-white">WINZ</span> 
+    <span class="text-gold">BARBERSHOP</span>
+  </h4>
+  <p>Tempat terbaik untuk potong rambut, treatment, dan tampil maksimal di Medan.</p>
+  <small>© 2026 Winz Barbershop. All Rights Reserved.</small>
+</div>
+
+      <div class="col-md-4 text-md-center mb-4">
+        <h5>Layanan Kami</h5>
+        <div>Hair Cut & Styling</div>
+        <div>Beard & Shaving</div>
+        <div>Coloring & Treatment</div>
+        <div>Paket Special</div>
+      </div>
+
+      <div class="col-md-4 text-md-start">
+        <h5>Hubungi Kami</h5>
+        <div><i class="bi bi-whatsapp me-2"></i> 0853-7445-0261</div>
+        <div><i class="bi bi-geo-alt me-2"></i> Medan, Sumatera Utara</div>
+        
+        <div class="pt-4 social-icons">
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/winz.barbershop?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-gold me-4" title="Instagram Winz Barbershop">
+            <i class="bi bi-instagram fs-4"></i>
+          </a>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/6285374450261?text=Halo%20Winz%20Barbershop,%20saya%20ingin%20booking%20atau%20tanya-tanya" target="_blank" class="text-gold me-4" title="Chat via WhatsApp">
+            <i class="bi bi-whatsapp fs-4"></i>
+          </a>
+
+          <!-- TikTok (ganti Facebook) -->
+          <a href="https://www.tiktok.com/@winz.barbershop?is_from_webapp=1&sender_device=pc" target="_blank" class="text-gold" title="TikTok Winz Barbershop">
+            <i class="bi bi-tiktok fs-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
